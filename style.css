@@ -22,7 +22,7 @@ nav .searchbar {
 .navigation-icons{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
 }
 
 .search{
@@ -43,4 +43,27 @@ nav .searchbar {
     border: none;
     border-left: solid 1px #cccc;
     width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-icons{
+    color: black;
+}
+
+.button-group{
+    border-top: 1px solid black;
+}
+
+aside{
+    width: 240px;
+    float: left;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
