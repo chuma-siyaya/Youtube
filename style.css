@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* Cursor darkmode feature */
 :root{
     --bg-color: #f9f9f9;
     --text-color: #0f0f0f;
@@ -18,6 +18,7 @@ body{
     color: var(--text-color);
 }
 
+/* cursor darkmode feature */
 body.dark-mode{
     --bg-color: #0f0f0f;
     --text-color: #f1f1f1;
@@ -60,6 +61,11 @@ nav .logo img {
     width: 93px;
     height: 51px;
     margin-left: 20px;
+    transition: filter 0.2s ease;
+}
+
+body.dark-mode nav .logo img {
+    filter: invert(1);
 }
 
 nav .searchbar {
