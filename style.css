@@ -170,13 +170,12 @@ button-group h2:hover{
 }
 
 .button img {
-    width: 22px;
-    height: 22px;
-    filter: brightness(0) saturate(100%) invert(var(--svg-invert, 0));
+    width: 30px;
+    height: 30px;
 }
 
-body.dark-mode .button img:not(.icon):not(.channel-logo) {
-    filter: brightness(0) saturate(100%) invert(1);
+body.dark-mode .button img:not(.icon):not(.channel-logo):not(.channel-icon){
+    filter: invert(1);
 }
 
 .button.active{
