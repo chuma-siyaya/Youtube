@@ -7,13 +7,15 @@
     <link rel="icon" href="https://www.youtube.com/s/desktop/00d5ae36/img/favicon_96x96.png" sizes="96x96">
     <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="media.css">
 
 </head>
+
 <body>
     <nav>
 
         <div class="logo">
-            <i class="material-icons">menu</i>
+            <i class="material-icons" id="menu-btn">menu</i>
             <img src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg" alt="YouTube Logo">
         </div>
         
@@ -35,19 +37,31 @@
     </nav>
     
     <aside>
-            <section class="button-group">
-                <div class="button">
+            <section class="button-group1">
+                <div class="button active">
                 <!-- icon-->
                  <i class="material-icons">home</i>
-                 Home
+                 <span>Home</span>
                 </div>
 
                 <div class="button">
                 <!-- icon-->
                  <img src="Images/shorts.svg" alt="Shorts Icon">
-                 Shorts
+                 <span>Shorts</span>
                 </div>
-            </section>
+            
+            <!-- Mini section to make icons for collapsed you and Sub -->
+            <div class="button mini-only">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </div>
+
+            <div class="button mini-only">
+                <i class="material-icons">account_circle</i>
+                <span>You</span>
+            </div>
+    
+            </section> 
 
             <!-- Subscriptions section-->
             <section class="button-group">
@@ -56,15 +70,35 @@
 
                 <div class="button">
                 <!-- icon-->
-                 <img src="" alt="Channel Icon">
-                 Channel Name
+                 <img src="https://yt3.ggpht.com/Ls1cFyXLmvEQezTLndz1NZKujWUTEZ6hCKUEXx6EKqJBkW4NB7lxmxnr8T4R9ZHXGwS5Z93i4PM=s68-c-k-c0x00ffffff-no-rj" alt="Channel Icon">
+                 <span>Scott Evans</span>
                 </div>
 
                 <div class="button">
                 <!-- icon-->
-                 <img src="" alt="Channel Icon">
-                 Channel Name
+                 <img src="https://yt3.ggpht.com/HoruwJNCs9s-3k2UVs1qbcUKeCYzHiGTPcpuy_wIExoWqESvHjePdzxtp91IkisueRLqjRDs=s68-c-k-c0x00ffffff-no-rj" alt="Channel Icon">
+                 <span>Footasylum</span>
                 </div>
+
+                <div class="button">
+                <!-- icon-->
+                 <img src="https://yt3.ggpht.com/FsjWQR7894C-1p9vGx1uULbdjcg_oDzswdZgC0pLcaj0JHNM1-LhI7Pd3Hfz7Uq2FKd-AzLE=s68-c-k-c0x00ffffff-no-rj" alt="Channel Icon">
+                 <span>Trevor Noah</span>
+                </div>
+
+                <div class="button">
+                <!-- icon-->
+                 <img src="https://yt3.ggpht.com/xGo7Kyfy6-fwsg9InNH5gIzfC69tk44lygm0iOtLRV1HdlOwUBPexOpOcMC3OduakJ0INS5lLwE=s68-c-k-c0x00ffffff-no-rj" alt="Channel Icon">
+                 <span>ShixtsnGigs Reacts</span>
+                </div>
+
+                <div class="button">
+                <!-- icon-->
+                 <img src="https://yt3.ggpht.com/HFfZisaVh7x0A_ZxfEObPrpAyDPqsuIJD0P4zE23jNL65Pdn58ixh7GsDaJcGw5797VChzybXQ=s68-c-k-c0x00ffffff-no-rj" alt="Channel Icon">
+                 <span>First We Feast</span>
+                </div>
+
+
             </section>
 
             <!-- You section-->
@@ -74,42 +108,42 @@
                 <div class="button">
                     <!-- icon-->
                     <i class="material-icons">history</i>
-                     History
+                     <span>History</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <i class="material-icons">playlist_play</i>
-                     Playlist
+                     <span>Playlist</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <i class="material-icons">schedule</i>
-                     Watch Later
+                     <span>Watch Later</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/thumbsup.svg" alt="Liked Videos">
-                     Liked Videos
+                     <span>Liked Videos</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <i class="material-icons">smart_display</i>
-                     Your Videos
+                     <span>Your Videos</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <i class="material-icons">download_2</i>
-                     Downloads
+                     <span>Downloads</span>
 
                 </div>
                
@@ -122,35 +156,35 @@
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/music.svg" alt="Music">
-                     Music
+                     <span>Music</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/gaming.svg" alt="Gaming">
-                     Gaming
+                     <span>Gaming</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/news.svg" alt="News">
-                     News
+                     <span>News</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/sport.svg" alt="Sport">
-                     Sport
+                     <span>Sport</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/podcasts.svg" alt="Podcasts">
-                     Podcasts
+                     <span>Podcasts</span>
 
                 </div>
             </section>
@@ -162,28 +196,28 @@
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/ytpremium.svg" alt="YouTube Premium">
-                     YouTube Premium
+                     <span>YouTube Premium</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/ytstudio.svg" alt="YouTube Studio">
-                     YouTube Studio
+                     <span>YouTube Studio</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/ytmusic.svg" alt="YouTube Music">
-                     YouTube Music
+                     <span>YouTube Music</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/ytkids.svg" alt="YouTube Kids">
-                     YouTube Kids
+                     <span>YouTube Kids</span>
 
                 </div>
             </section>
@@ -194,27 +228,27 @@
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/settings.svg" alt="Settings">
-                     Settings
+                     <span>Settings</span>
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/flag.svg" alt="Report history">
-                     Report history
+                     <span>Report history</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <i class="material-icons">help</i>
-                     Help
+                     <span>Help</span>
 
                 </div>
 
                 <div class="button">
                     <!-- icon-->
                      <img src="Images/feedback.svg" alt="Send Feedback">
-                     Send Feedback
+                     <span>Send Feedback</span>
 
                 </div>
             </section>
@@ -246,9 +280,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                  <img class="channel-logo" src="https://yt3.ggpht.com/xGo7Kyfy6-fwsg9InNH5gIzfC69tk44lygm0iOtLRV1HdlOwUBPexOpOcMC3OduakJ0INS5lLwE=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>NOT IN THE MOOD! | ShxtsnGigs Reacts</h3>
+                    <h4>NOT IN THE MOOD! | ShxtsnGigs Reacts</h4>
                     <p>ShxtsnGigs Reacts<span><img src="Images/tick.svg"></span></p>
                     <p>385k views • 6 days ago</p>
                 </section>
@@ -260,9 +295,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/FQE-QeZGnoOmG0bpqtE8TLXrSwA0MA3pMLf-8FIc8GKJxmCRqZ42Mdl0t7uVWE4Crd_Rj8WsEA=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>VINCE STAPLES IS AN ICONIC GUEST | ZIWE INTERVIEW</h3>
+                    <h4>VINCE STAPLES IS AN ICONIC GUEST | ZIWE INTERVIEW</h4>
                     <p>Ziwe<span><img src="Images/tick.svg"></span></p>
                     <p>1.9m views • 2 months ago</p>
                 </section>
@@ -274,9 +310,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                  <img class="channel-logo" src="https://yt3.ggpht.com/HFfZisaVh7x0A_ZxfEObPrpAyDPqsuIJD0P4zE23jNL65Pdn58ixh7GsDaJcGw5797VChzybXQ=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Cardi B Tries Not to Panic While Eating Spicy Wings | Hot Ones</h3>
+                    <h4>Cardi B Tries Not to Panic While Eating Spicy Wings | Hot Ones</h4>
                     <p>First We Feast<span><img src="Images/tick.svg"></span></p>
                     <p>7.4m views • 2 years ago </p>
                 </section>
@@ -288,9 +325,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/4AShAjAc0SZhQNMZx5M2y42vrm0anfCqYt8riCJE21C9sX_5ff345Wj50nqXwMINZPOK_gsKZw=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Gina Yashere's Mum Steals the Show! | Live at the Apollo</h3>
+                    <h4>Gina Yashere's Mum Steals the Show! | Live at the Apollo</h4>
                     <p>Live At The Apollo<span><img src="Images/tick.svg"></span></p>
                     <p>176k views • 1 year ago</p>
                 </section>
@@ -302,9 +340,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/HoruwJNCs9s-3k2UVs1qbcUKeCYzHiGTPcpuy_wIExoWqESvHjePdzxtp91IkisueRLqjRDs=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>"HELP, I don't want to marry my cousin!'" | Couch Confessional is BACK for season 2!</h3>
+                    <h4>"HELP, I don't want to marry my cousin!'" | Couch Confessional is BACK for season 2!</h4>
                     <p>Footasylum <span><img src="Images/tick.svg"></span></p>
                     <p>80k views • 2 days ago</p>
                 </section>
@@ -316,9 +355,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/FsjWQR7894C-1p9vGx1uULbdjcg_oDzswdZgC0pLcaj0JHNM1-LhI7Pd3Hfz7Uq2FKd-AzLE=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Dulce Sloan: Will You Be My Valentine?</h3>
+                    <h4>Dulce Sloan: Will You Be My Valentine?</h4>
                     <p>Trevor Noah</p>
                     <p>206k views • 12 days ago</p>
                 </section>
@@ -330,9 +370,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                 <img class="channel-logo" src="https://yt3.ggpht.com/5Pi1mE8kRDUhx-nT273HFws_AZ25IzgvPmBlKFZtZqlWowdeHTr1hqfjvCBbpMsDjrDWLNEl=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>S2E3: Hot, Excited, And In Your Area - Liza on Demand</h3>
+                    <h4>S2E3: Hot, Excited, And In Your Area - Liza on Demand</h4>
                     <p>Liza Koshy <span><img src="Images/tick.svg"></span></p>
                     <p>7.3m views • 6 years ago</p>
                 </section>
@@ -344,9 +385,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/iCj_kK3ZBq8i0V2wHWo4_Bpw3k5kwqydofpzegChtu7Wn-g1PpNPU0nDAQ7Bac08HJsISJ5QfQ=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Abusive Babysitter | Ali Siddiq Stand Up Comedy</h3>
+                    <h4>Abusive Babysitter | Ali Siddiq Stand Up Comedy</h4>
                     <p>Ali Siddiq <span><img src="Images/tick.svg"></span></p>
                     <p>699k views • 1 year ago</p>
                 </section>
@@ -358,9 +400,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                 <img class="channel-logo" src="https://yt3.ggpht.com/ytc/AIdro_kXK0r3_p-Ht_8QNz7t2diayNQ78E7mRy6F-pu9iTO6zTk=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Keke Palmer Teaches Jack Whitehall How to Make Her Sweet Potato Pancakes | NYT Cooking</h3>
+                    <h4>Keke Palmer Teaches Jack Whitehall How to Make Her Sweet Potato Pancakes | NYT Cooking</h4>
                     <p>NYT Cooking <span><img src="Images/tick.svg"></span></p>
                     <p>262k views • 2 weeks ago</p>
                 </section>
@@ -372,9 +415,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                  <img class="channel-logo" src="https://yt3.ggpht.com/xGo7Kyfy6-fwsg9InNH5gIzfC69tk44lygm0iOtLRV1HdlOwUBPexOpOcMC3OduakJ0INS5lLwE=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>BIGGEST ICKS, BUT YOU STILL STAYED? | EP 557</h3>
+                    <h4>BIGGEST ICKS, BUT YOU STILL STAYED? | EP 557</h4>
                     <p>ShxtsnGigs Podcast<span><img src="Images/tick.svg"></span></p>
                     <p>497k views • 2 months ago</p>
                 </section>
@@ -386,9 +430,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                  <img class="channel-logo" src="https://yt3.ggpht.com/Ls1cFyXLmvEQezTLndz1NZKujWUTEZ6hCKUEXx6EKqJBkW4NB7lxmxnr8T4R9ZHXGwS5Z93i4PM=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Ari Lennox Is Pure Joy</h3>
+                    <h4>Ari Lennox Is Pure Joy</h4>
                     <p>Scott Evans <span><img src="Images/tick.svg"></span></p>
                     <p>68k views • 3 days ago</p>
                 </section>
@@ -400,9 +445,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/ppLkI7peqTSOK_jAk2jj5OsZgYW8-HfHnHwb9QUIPstYUSh6B8jNu1CtRu2ci__wDD4AYhBjJhU=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Marcello Hernández Joins Brittany Broski's Royal Court</h3>
+                    <h4>Marcello Hernández Joins Brittany Broski's Royal Court</h4>
                     <p>Royal Court <span><img src="Images/tick.svg"></span></p>
                     <p>2.8m views • 1 month ago</p>
                 </section>
@@ -414,9 +460,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/cieDT3QIUV0qqqmYNt75lJF-BNlONlXwrrIsqocHepfTatKerMriBaUL0JOn9zgejmvEFxaCy8k=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Internationals "Shining Lights" Group Dance - The Next Step Extended Dances</h3>
+                    <h4>Internationals "Shining Lights" Group Dance - The Next Step Extended Dances</h4>
                     <p>THE NEXT STEP <span><img src="Images/tick.svg"></span></p>
                     <p>3.8m views • 10 years ago</p>
                 </section>
@@ -428,9 +475,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/ytc/AIdro_mMcQCIWDMzMYKQcLwNFTXbvGx_WUyGkIAjViiNwpCk3Aaa=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>RAYE Sings 'Escapism.', Lewis Capaldi, and Amy Winehouse in a Game of Song Association | ELLE</h3>
+                    <h4>RAYE Sings 'Escapism.', Lewis Capaldi, and Amy Winehouse in a Game of Song Association | ELLE</h4>
                     <p>ELLE <span><img src="Images/tick.svg"></span></p>
                     <p>837k views • 2 years ago</p>
                 </section>
@@ -442,9 +490,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/kYn7K474j78lLU-DZm3IzFMhJIgiEEr4XS-F1d4ODdC08k5PAf2dc-ItGWvDp9YNFfIiIkkvGA=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>Why You Ain't Say Nothing? (Full Sketch) | A Black Lady Sketch Show Season 4 | HBO Max</h3>
+                    <h4>Why You Ain't Say Nothing? (Full Sketch) | A Black Lady Sketch Show Season 4 | HBO Max</h4>
                     <p>HBO Max <span><img src="Images/tick.svg"></span></p>
                     <p>418k views • 2 years ago</p>
                 </section>
@@ -456,9 +505,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/3CYVzLztKZ_nGzrs6UTXwKr5W-RUe5uIUuJoHno6HgUVj-KpbJ8_u-6MveD3k-AZXEOdWpUPSw=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>The Funniest Women from The Best of Stand-Up 2020</h3>
+                    <h4>The Funniest Women from The Best of Stand-Up 2020</h4>
                     <p>Netflix Is A Joke <span><img src="Images/tick.svg"></span></p>
                     <p>1.4m views • 4 years ago</p>
                 </section>
@@ -470,9 +520,10 @@
 
             <section class="video-info">
                 <!-- profile icon-->
+                <img class="channel-logo" src="https://yt3.ggpht.com/ytc/AIdro_mbfHe6HZVCmg8AJb1-D1IjAHNcyTVuSG4DWG5o_iA-Bn2L=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
 
                 <section class="text">
-                    <h3>'Abbott Elementary' Cast Answers Fan Mail | InStyle</h3>
+                    <h4>'Abbott Elementary' Cast Answers Fan Mail | InStyle</h4>
                     <p>InStyle <span><img src="Images/tick.svg"></span></p>
                     <p>400k views • 4 months ago</p>
                 </section>
@@ -484,9 +535,11 @@
 
             <section class="video-info">
                 <!-- profile icon-->
-
+                 <div>
+                <img class="channel-logo" src="https://yt3.ggpht.com/0UstnnBY3C69WcOIv8W_8blHZKMpoxluehKazofyMTt93kO2wGbJ1-ZIiHaFSNYBVGAgu3AEUEo=s68-c-k-c0x00ffffff-no-rj" alt="Channel Logo">
+                 </div>
                 <section class="text">
-                    <h3>Top 5 Most-Watched Live Sketches | Season 48 | Saturday Night Live</h3>
+                    <h4>Top 5 Most-Watched Live Sketches | Season 48 | Saturday Night Live</h4>
                     <p>Saturday Night Live <span><img src="Images/tick.svg"></span></p>
                     <p>15m views • 2 years ago</p>
                 </section>
@@ -494,6 +547,18 @@
         </div>
     </main>
 
+    <!-- JS sidebar collapse script -->
+
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const aside = document.querySelector("aside");
+    const main = document.querySelector("main");
+
+    menuBtn.addEventListener("click", () => {
+        aside.classList.toggle("collapsed");
+        main.classList.toggle("expanded");
+    })
+</script>
 
 </body>
 </html>

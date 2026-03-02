@@ -1,7 +1,12 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', 'Ariel' sans-serif;
 }
 
 nav {
@@ -9,12 +14,25 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 56px;
-    padding: 0 16px;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
 }
 nav .logo {
     display: flex;
     align-items: center;
 }
+
+nav .logo img {
+    width: 93px;
+    height: 51px;
+    margin-left: 20px;
+}
+
 nav .searchbar {
     display: flex;
 }
@@ -25,45 +43,270 @@ nav .searchbar {
     gap: 15px;
 }
 
+.create-bttn{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px 14px;
+    height: 36px;
+
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 18px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
 .search{
    display: flex;
     border: 1px solid #cccc;
     width: 600px;
-    margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .search input{
+    flex: 1;
     border: none;
-    width: 90%;
-    padding: 5px;
+    padding: 8px 12px;
+    outline: none;
 }
 
-.search button{
+.search button {
+    width: 60px;          
     border: none;
-    border-left: solid 1px #cccc;
-    width: 10%;
+    border-left: 1px solid #ccc;
+    background: #f8f8f8;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .material-icons{
     color: black;
+    width: 24px;
+    height: 24px;
 }
 
 .button-group{
     border-top: 1px solid black;
 }
 
+.button:hover{
+    background-color: #cccc;
+    border-radius: 20px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 20px;
+    padding-left: 15px;
+    padding: 0 24px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.button-group h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #606060;
+    padding: 8px 24px;
+}
+
+button-group h2:hover{
+    cursor: pointer;
+}
+
+.button i.material-icons {
+    font-size: 22px;
+}
+
+.button img {
+    width: 22px;
+    height: 22px;
+}
+
+.button.active{
+    background-color: #cccc;
+    font-weight: 500;
+}
+
 aside{
     width: 240px;
-    float: left;
-    height: 100%;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    padding: 10px 0;
+    transition: width 0.3s ease;
+}
+
+/* collapsed sidebar like real YT */
+aside.collapsed{
+    width: 80px;
+}
+
+aside.collapsed .button-group1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside.collapsed .button-group1 .button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 26px 0;
+}
+
+
+aside.collapsed .button-group1 .button i,
+aside.collapsed .button-group1 .button img {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+
+aside.collapsed .button-group1 .button span {
+    font-size: 11px;
+}
+
+aside.collapsed .button-group{
+    display: none;
+}
+
+aside.collapsed .button-group1{
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-only{
+    display: none;
+}
+
+aside.collapsed .mini-only{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 0;
+    width: 100%;
+}
+
+aside.collapsed .mini-only i,
+aside.collapsed .mini-only img{
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+aside.collapsed .mini-only span{
+    font-size: 11px;
+    text-align: center;
+}
+
+aside.collapsed .footer{
+    display: none;
+}
+
+aside img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer {
+    padding: 16px 24px;
+    font-size: 12px;
+    color: #606060;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 12px;
+    gap: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    line-height: 0.8;
+}
+
+.footer li {
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 main{
+    margin-top: 56px;
+    margin-left: 240px;
+    height: calc(100vh - 56px);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 15px;
+
+    transition: margin-left 0.3s ease;
+}
+
+main.expanded{
+    margin-left: 72px;
+}
+
+.video-info{
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.channel-logo{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.text h4{
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.text p{
+    font-size: 12px;
+    color: #606060;
+    margin-bottom: 2px;
+}
+
+.text span img{
+    width: 14px;
+    margin-left: 5px;
+    vertical-align: middle;
 }
