@@ -91,6 +91,7 @@ nav .searchbar {
 
     font-size: 14px;
     font-weight: 500;
+    color: var(--text-color);
 
     cursor: pointer;
 }
@@ -174,7 +175,7 @@ button-group h2:hover{
     filter: brightness(0) saturate(100%) invert(var(--svg-invert, 0));
 }
 
-body.dark-mode .button img {
+body.dark-mode .button img:not(.icon):not(.channel-logo) {
     filter: brightness(0) saturate(100%) invert(1);
 }
 
