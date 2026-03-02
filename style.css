@@ -155,7 +155,7 @@ nav .searchbar {
 .button-group h2 {
     font-size: 18px;
     font-weight: 500;
-    color: var(--text-color);
+    color:black;
     padding: 8px 24px;
 }
 
@@ -372,42 +372,4 @@ main.expanded{
 
 .theme-toggle:hover{
     background-color: var(--button-hover-bg);
-}
-
-/* SVG Dark Mode Responsiveness */
-svg {
-    color: inherit;
-}
-
-svg path,
-svg polygon,
-svg circle,
-svg g {
-    fill: currentColor;
-    stroke: currentColor;
-}
-
-/* Ensure sidebar images use correct color */
-aside .button img,
-.footer img {
-    filter: brightness(0) saturate(100%) invert(0);
-}
-
-body.dark-mode aside .button img,
-body.dark-mode .footer img {
-    filter: brightness(0) saturate(100%) invert(1);
-}
-
-/* Ensure all text elements use correct theme variables */
-aside .button span,
-aside .button-group h2 {
-    color: var(--text-color);
-}
-
-.text h4 {
-    color: var(--text-color);
-}
-
-.text p {
-    color: var(--muted-text);
 }
