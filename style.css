@@ -55,17 +55,14 @@ nav {
 nav .logo {
     display: flex;
     align-items: center;
+    color: var(--icon-color);
 }
 
-nav .logo img {
+nav .logo .logo-svg {
     width: 93px;
     height: 51px;
     margin-left: 20px;
-    transition: filter 0.2s ease;
-}
-
-body.dark-mode nav .logo img {
-    filter: invert(1);
+    flex-shrink: 0;
 }
 
 nav .searchbar {
