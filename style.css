@@ -42,6 +42,7 @@ body.dark-mode{
 nav {
     display: flex;
     justify-content: space-between;
+
     align-items: center;
     height: 56px;
     padding: 16px;
@@ -72,6 +73,7 @@ nav .searchbar {
 .navigation-icons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 15px;
 }
 
@@ -125,6 +127,7 @@ nav .searchbar {
     color: var(--icon-color);
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .button-group{
@@ -150,9 +153,9 @@ nav .searchbar {
 }
 
 .button-group h2 {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
-    color: #606060;
+    color: var(--text-color);
     padding: 8px 24px;
 }
 
@@ -301,6 +304,15 @@ main.expanded{
     margin-left: 72px;
 }
 
+.video:hover{
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+    background-color: var(--button-hover-bg);
+    padding: 16px 16px 0 16px;
+    border-radius: 12px;
+
+}
+
 .video-info{
     display: flex;
     flex-direction: row;
@@ -360,4 +372,42 @@ main.expanded{
 
 .theme-toggle:hover{
     background-color: var(--button-hover-bg);
+}
+
+/* SVG Dark Mode Responsiveness */
+svg {
+    color: inherit;
+}
+
+svg path,
+svg polygon,
+svg circle,
+svg g {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+/* Ensure sidebar images use correct color */
+aside .button img,
+.footer img {
+    filter: brightness(0) saturate(100%) invert(0);
+}
+
+body.dark-mode aside .button img,
+body.dark-mode .footer img {
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+/* Ensure all text elements use correct theme variables */
+aside .button span,
+aside .button-group h2 {
+    color: var(--text-color);
+}
+
+.text h4 {
+    color: var(--text-color);
+}
+
+.text p {
+    color: var(--muted-text);
 }
