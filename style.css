@@ -147,6 +147,7 @@ nav .searchbar {
     padding: 0 24px;
     font-size: 14px;
     font-weight: 400;
+    color: var(--text-color);
     cursor: pointer;
     border-radius: 10px;
 
@@ -155,7 +156,7 @@ nav .searchbar {
 .button-group h2 {
     font-size: 18px;
     font-weight: 500;
-    color:black;
+    color: var(--text-color);
     padding: 8px 24px;
 }
 
@@ -170,6 +171,11 @@ button-group h2:hover{
 .button img {
     width: 22px;
     height: 22px;
+    filter: brightness(0) saturate(100%) invert(var(--svg-invert, 0));
+}
+
+body.dark-mode .button img {
+    filter: brightness(0) saturate(100%) invert(1);
 }
 
 .button.active{
